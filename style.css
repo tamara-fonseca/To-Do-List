@@ -1,0 +1,102 @@
+:root{
+   --color-pink1: #FF9B9B;
+   --color-pink2: rgb(255, 214, 165);
+   --color-pink3: rgb(255, 254, 196);
+   --color-green: #CBFFA9;
+   --color-blue: #3AA6B9;
+
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-blue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+.content-itens{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#inputtask,
+#botão
+{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+#inputtask{
+    width: 20rem;
+    border-radius: 1rem;
+}
+#botão{
+    background-color: #2B3467;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#botão:hover{
+    background-color: #BAD7E9;
+}
+
+#todolist{
+    display: flex;
+    flex-direction: column;
+    gap: 1 rem;
+    padding: 0;
+}
+
+#todolist li{
+    list-style-type: none;
+    font-size: 25px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+
+    }
+
+    #todolist li:hover{
+        background-color: #BAD7E9;
+        transition: .4s;
+        border-radius: 1rem;
+        padding-left: 1rem;
+        align-items: center;
+    }
+
+#btok{
+    color: white;
+    border: none;
+    background-color: #2B3467;
+    color: white;
+    padding: .4rem, .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+#btok:hover {
+    background-color: #BAD7E9;
+}
